@@ -1,0 +1,6 @@
+# NCK WEALTH - root deployment
+# Always serve the static NCK WEALTH homepage first.
+DirectoryIndex index.html
+
+# Prevent directory listing.
+Options -Indexes

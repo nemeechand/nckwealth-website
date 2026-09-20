@@ -1,0 +1,20 @@
+NCK WEALTH — NEXT 3 SETUP ITEMS
+
+1) YouTube Auto Feed
+   - Create a YouTube Data API v3 key in Google Cloud.
+   - Put it in js/config.js as YOUTUBE_API_KEY.
+   - Restrict the key to your website domain (HTTP referrer) and YouTube Data API v3.
+   - The channel is already configured as @NCKWEALTH.
+
+2) Google Analytics
+   - Send the GA4 Measurement ID, e.g. G-XXXXXXXXXX.
+   - Put it in js/config.js as GOOGLE_ANALYTICS_ID.
+
+3) Meta Pixel
+   - Send the Meta Pixel ID.
+   - Put it in js/config.js as META_PIXEL_ID.
+
+4) Contact Form — Email + Google Sheet
+   - contact-handler.php is already included and sends enquiries to support@nckwealth.com using PHP mail().
+   - For Google Sheet capture, deploy google-apps-script/Code.gs as a Google Web App and paste the Web App URL into $sheetWebhook in contact-handler.php.
+   - Then upload contact-handler.php to the website root.
