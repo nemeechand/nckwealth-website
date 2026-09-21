@@ -728,4 +728,38 @@ h3{ font-size:1.3rem; }
     flex:0 0 62%; scroll-snap-align:start;
   }
 }
+/* ===== NCK WEALTH HERO IMAGE BASELINE FIX ===== */
 
+.hero{
+  overflow:hidden;
+}
+
+@media (min-width:960px){
+
+  .hero-media{
+    align-items:flex-end;
+  }
+
+  .hero-media picture{
+    align-items:flex-end;
+    justify-content:center;
+  }
+
+  .hero-media img{
+    object-position:center bottom;
+    transform:translateY(28px);
+  }
+
+  /* subtle professional baseline */
+  .hero-media::after{
+    content:"";
+    position:absolute;
+    left:12%;
+    right:12%;
+    bottom:0;
+    height:1px;
+    background:rgba(255,255,255,0.18);
+    box-shadow:0 0 14px rgba(255,255,255,0.05);
+    pointer-events:none;
+  }
+}
